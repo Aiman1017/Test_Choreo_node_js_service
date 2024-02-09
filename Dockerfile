@@ -20,4 +20,6 @@ EXPOSE 80
 # Actual timezone env variable set
 ENV TZ Asia/Kuala_Lumpur
 
+USER node
+
 CMD [ "node", "server.js" ]
