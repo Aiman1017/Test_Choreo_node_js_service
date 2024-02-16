@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
     res.status(200).send('Successfully connect to Server !!!')
 });
 
+app.get('/test', (req, res) => {
+    res.status(200).send('Test route for Choreo')
+});
+
 const port = process.env.REACT_API_PORT || 3001;
 
 app.listen(port, () => console.log(`Listening on ${port}...`));
